@@ -68,14 +68,14 @@ void sendSensor()
   	Blynk.virtualWrite(V6, temperature);
 
 	lcd.clear();
-    lcd.setCursor(0, 0); 
-    lcd.print("Temp.: ");
-    lcd.print(t);
+    	lcd.setCursor(0, 0); 
+    	lcd.print("Temp.: ");
+    	lcd.print(t);
     
-    lcd.setCursor(0, 1);
-    lcd.print(F("Humidity: "));
-    lcd.print(h);
-    lcd.println("%");
+    	lcd.setCursor(0, 1);
+    	lcd.print(F("Humidity: "));
+    	lcd.print(h);
+    	lcd.println("%");
 
 	Serial.println(t);
 	Serial.println(h);
